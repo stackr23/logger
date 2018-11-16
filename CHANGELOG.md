@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/stackr23/logger/compare/v2.0.0...v2.1.0) (2018-11-16)
+
+
+### Features
+
+* **github-releases:** :sparkles: [@semantic-release](https://github.com/semantic-release)/github ([d98a559](https://github.com/stackr23/logger/commit/d98a559))
+
 # [2.0.0](https://github.com/stackr23/logger/compare/v1.4.0...v2.0.0) (2018-11-16)
 
 
