@@ -16,8 +16,7 @@
       [
         "@semantic-release/release-notes-generator", {
           "parserOpts": {
-            "noteKeywords": ["BREAKING"]
-          }
+            "noteKeywords": ["BREAKING"]}
         }
       ],
       [
