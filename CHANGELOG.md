@@ -1,3 +1,18 @@
+# [2.0.0](https://github.com/stackr23/logger/compare/v1.4.0...v2.0.0) (2018-11-16)
+
+
+### Features
+
+* **release:** CI automatic release ([49b6f8f](https://github.com/stackr23/logger/commit/49b6f8f))
+* **release:** CI release ([3198205](https://github.com/stackr23/logger/commit/3198205))
+* **semantic-release:** test :rocket: - ✨ 👷 🚀 BREAKING: no manuell publishing anymore! ([cc5140c](https://github.com/stackr23/logger/commit/cc5140c))
+* **semantic-release:** test :rocket: - ✨ 👷 🚀 BREAKING: no manuell publishing anymore! ([0036a01](https://github.com/stackr23/logger/commit/0036a01))
+
+
+### BREAKING CHANGES
+
+* **release:** no more manuell deployment!
+
 # [1.4.0](https://github.com/stackr23/logger/compare/v1.3.1...v1.4.0) (2018-11-16)
 
 
