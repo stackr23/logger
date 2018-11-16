@@ -12,14 +12,9 @@
   "release": {
     "branch": "master",
     "plugins": [
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "./CHANGELOG.md"
-        }
-      ],
+      ["@semantic-release/changelog", {"changelogFile": "CHANGELOG.md"}],
+      "@semantic-release/git",
       "@semantic-release/npm",
-      "@semantic-release/git"
     ]
   },
   "repository": {
