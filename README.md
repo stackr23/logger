@@ -1,12 +1,14 @@
 # @stackr23/logger
 > __beautyful console output helper__
 
-[![npm version](https://badge.fury.io/js/%40stackr23%2Flogger.svg?v100)](http://npm.im/@stackr23/logger)
+[![Build Status](https://travis-ci.com/stackr23/logger.svg?branch=master)](https://travis-ci.com/stackr23/logger)
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 [![Maintenance][maintenance-img]][maintenance-url]
+[![GitMoji][gitmoji-img]][gitmoji-url]
+
+[![npm version](https://badge.fury.io/js/%40stackr23%2Flogger.svg?v100)](http://npm.im/@stackr23/logger)
 [![Semantic Versioning][semantic-img]][semantic-url]
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![GitMoji][gitmoji-img]][gitmoji-url]
 
 ```javascript
 import Logger from '@stackr23/logger'
