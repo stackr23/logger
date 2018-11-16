@@ -1,3 +1,5 @@
+'use strict'
+
 import chalk   from 'chalk'
 
 // no arrow function -> preserve context!
