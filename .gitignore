@@ -21,5 +21,7 @@ wp-config.php
 .DS_Store
 
 # dist
-dist/
-build/
+!dist/
+dist/**/*
+!build
+build/**/*

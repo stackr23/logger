@@ -1,0 +1,29 @@
+notifications:
+  email: false
+
+language: node_js
+node_js: 9
+cache:
+  directories:
+    - ~/.npm
+
+branches:
+  only:
+  - master
+  - development
+  - /^greenkeeper/.*$/
+  # except:
+  #   - /^v\d+\.\d+\.\d+$/
+
+before_install:
+    - npm install -g gulp-cli
+
+install: npm install
+
+script:
+- npm run build
+- npm run test
+
+after_success:
+  # - npm run travis-deploy-once "npm run semantic-release"
+  - npm run semantic-release
