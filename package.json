@@ -16,12 +16,7 @@
       [
         "@semantic-release/release-notes-generator",
         {
-          "writerOpts": {
-            "commitsSort": [
-              "subject",
-              "scope"
-            ]
-          }
+
         }
       ],
       [
