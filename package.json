@@ -12,7 +12,12 @@
   "release": {
     "branch": "master",
     "plugins": [
-      ["@semantic-release/changelog", {"changelogFile": "./CHANGELOG.md"}],
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "./CHANGELOG.md"
+        }
+      ],
       "@semantic-release/npm",
       "@semantic-release/git"
     ]
@@ -45,5 +50,9 @@
     "conventional-changelog-cli": "^2.0.11",
     "semantic-release": "^15.12.0",
     "travis-deploy-once": "^5.0.9"
+  },
+  "dependencies": {
+    "@semantic-release/git": "^7.0.5",
+    "@semantic-release/npm": "^5.1.1"
   }
 }
