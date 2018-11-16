@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/stackr23/logger/compare/v2.1.0...v2.2.0) (2018-11-16)
+
+
+### Features
+
+* **semantic-release:** change commit message ([65e9130](https://github.com/stackr23/logger/commit/65e9130))
+
 # [2.1.0](https://github.com/stackr23/logger/compare/v2.0.0...v2.1.0) (2018-11-16)
 
 
