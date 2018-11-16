@@ -6,7 +6,7 @@
 [![Maintenance][maintenance-img]][maintenance-url]
 [![GitMoji][gitmoji-img]][gitmoji-url]<br />
 [![npm version](https://badge.fury.io/js/%40stackr23%2Flogger.svg?v111)](http://npm.im/@stackr23/logger)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-orange.svg)](https://conventionalcommits.org)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-orange.svg)](https://conventionalcommits.org) [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/logger.svg)](https://greenkeeper.io/)
 [![Semantic Versioning][semantic-img]][semantic-url]
 
 ```javascript
