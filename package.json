@@ -1,6 +1,6 @@
 {
   "name": "@stackr23/logger",
-  "version": "0.0.0-development",
+  "version": "1.1.1",
   "description": "beautyful console output helper with custom chalk extension",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,6 +8,14 @@
     "build": "bash ./build.sh",
     "semantic-release": "semantic-release",
     "conventional-changelog": "conventional-changelog -i CHANGELOG.md -s -a -p angular -r 0"
+  },
+  "release": {
+    "branch": "master",
+    "plugins": [
+      ["@semantic-release/changelog", {"changelogFile": "./CHANGELOG.md"}],
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
   },
   "repository": {
     "type": "git",
@@ -31,6 +39,7 @@
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.6",
     "@babel/register": "^7.0.0",
+    "@semantic-release/changelog": "^3.0.1",
     "babel-preset-minify": "^0.5.0",
     "conventional-changelog": "^3.0.5",
     "conventional-changelog-cli": "^2.0.11",

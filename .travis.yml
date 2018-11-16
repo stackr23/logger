@@ -10,13 +10,11 @@ cache:
 branches:
   only:
   - master
-  - development
-  - /^greenkeeper/.*$/
-  # except:
-  #   - /^v\d+\.\d+\.\d+$/
+  except:
+    - /^v\d+\.\d+\.\d+$/
 
-before_install:
-    - npm install -g gulp-cli
+# before_install:
+#     - npm install -g gulp-cli
 
 install: npm install
 

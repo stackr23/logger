@@ -12,7 +12,15 @@
 
 ### Bug Fixes
 
+* **changelog:** :crossing_fingers: added basic changelog to test [@semantic-release](https://github.com/semantic-release)/changelog ([f422ec4](https://github.com/stackr23/logger/commit/f422ec4))
+* **CI:** :construction_worker:  branches->except->/^v\d+\.\d+\.\d+$/ ([0118de7](https://github.com/stackr23/logger/commit/0118de7))
 * **CI:** :green_heart: npm publishing per travis-ci ([426e156](https://github.com/stackr23/logger/commit/426e156))
+* **semantic-release/changelog:** plugin order ([7fb40c0](https://github.com/stackr23/logger/commit/7fb40c0))
+
+
+### Features
+
+* :sparkles: [@semantic-release](https://github.com/semantic-release)/changelog ([0932df2](https://github.com/stackr23/logger/commit/0932df2))
 
 
 
