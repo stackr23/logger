@@ -1,4 +1,4 @@
-## [1.3.1](https://github.com/stackr23/logger/compare/v1.3.0...v1.3.1) (2018-11-16)
+# [1.3.1](https://github.com/stackr23/logger/compare/v1.3.0...v1.3.1) (2018-11-16)
 
 
 ### Bug Fixes
