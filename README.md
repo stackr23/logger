@@ -1,7 +1,7 @@
 # @stackr23/logger
 > __beautyful console output helper__
 
-[![npm version](https://badge.fury.io/js/%40stackr23%logger.svg?v100)](http://npm.im/@stackr23/logger)
+[![npm version](https://badge.fury.io/js/%40stackr23%2Flogger.svg?v100)](http://npm.im/@stackr23/logger)
 [![PRs Welcome][pr-welcome]](http://makeapullrequest.com)
 [![Maintenance][maintenance-img]][maintenance-url]
 [![Semantic Versioning][semantic-img]][semantic-url]
