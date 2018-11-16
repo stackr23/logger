@@ -1,3 +1,14 @@
+# Changelog
+> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
+
+## [2.2.1](https://github.com/stackr23/logger/compare/v2.2.0...v2.2.1) (2018-11-16)
+
+
+### Bug Fixes
+
+* **changelog:** added changelog title ([58c90a1](https://github.com/stackr23/logger/commit/58c90a1))
+* **merge:** resolved all conflicts ([7b803f2](https://github.com/stackr23/logger/commit/7b803f2))
+
 # [2.2.0](https://github.com/stackr23/logger/compare/v2.1.0...v2.2.0) (2018-11-16)
 
 
