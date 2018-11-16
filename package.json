@@ -14,7 +14,7 @@
     "plugins": [
       "@semantic-release/commit-analyzer",
       [
-        "semantic-release/release-notes-generator",
+        "@semantic-release/release-notes-generator",
         {
           "writerOpts": {
             "commitsSort": [
@@ -45,7 +45,7 @@
     "stackr23"
   ],
   "author": "Stefan Friedl (DoubleU23)",
-  "license": "GNU LGPL v3",
+  "license": "GNU-LGPL-v3",
   "bugs": {
     "url": "https://github.com/stackr23/logger/issues"
   },
@@ -66,6 +66,5 @@
     "semantic-release": "^15.12.0",
     "travis-deploy-once": "^5.0.9"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
