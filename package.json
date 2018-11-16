@@ -1,0 +1,34 @@
+{
+  "name": "@stackr23/logger",
+  "version": "1.0.0",
+  "description": "beautyful console output helper with custom chalk extension",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "node ./test/indexBabelRegister.js",
+    "build": "bash ./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackr23/logger.git"
+  },
+  "keywords": [
+    "logger",
+    "console",
+    "chalk",
+    "stackr23"
+  ],
+  "author": "Stefan Friedl (DoubleU23)",
+  "license": "GNU LGPL v3",
+  "bugs": {
+    "url": "https://github.com/stackr23/logger/issues"
+  },
+  "homepage": "https://github.com/stackr23/logger#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/register": "^7.0.0",
+    "babel-preset-minify": "^0.5.0"
+  }
+}
