@@ -13,7 +13,9 @@
     "branch": "master",
     "plugins": [
       "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator"
+      ["semantic-release/release-notes-generator", {
+        "writerOpts": {"commitsSort": ["subject", "scope"]}
+      }],
       ["@semantic-release/changelog", {"changelogFile": "CHANGELOG.md"}],
       "@semantic-release/git",
       "@semantic-release/npm"
