@@ -1,3 +1,11 @@
+## <small>1.2.1 (2018-11-16)</small>
+
+* fix(:package:):     "@semantic-release/release-notes-generator": "github:semantic-release/release-no ([8413598](https://github.com/stackr23/logger/commit/8413598))
+* fix(changelog): :crossing_fingers: ([8fe7390](https://github.com/stackr23/logger/commit/8fe7390))
+* fix(:pencil2:): typo in packacke.json ([8f856e8](https://github.com/stackr23/logger/commit/8f856e8))
+* fix(:pencil2:): typo in packacke.json ([e399d23](https://github.com/stackr23/logger/commit/e399d23))
+* fix(:pencil2:): typo in packacke.json ([7a22d22](https://github.com/stackr23/logger/commit/7a22d22))
+
 # [1.1.0](https://github.com/stackr23/logger/compare/8dc88c4...v1.1.0) (2018-11-16)
 
 
@@ -21,6 +29,3 @@
 ### Features
 
 * :sparkles: [@semantic-release](https://github.com/semantic-release)/changelog ([0932df2](https://github.com/stackr23/logger/commit/0932df2))
-
-
-
