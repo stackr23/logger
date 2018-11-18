@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.2.2](https://github.com/stackr23/logger/compare/v2.2.1...v2.2.2) (2018-11-18)
+
+
+### Bug Fixes
+
+* **semanticRelease:** :arrow_down: removed from package - shoved npm install into travis ([8bdb3aa](https://github.com/stackr23/logger/commit/8bdb3aa))
+
 ## [2.2.1](https://github.com/stackr23/logger/compare/v2.2.0...v2.2.1) (2018-11-16)
 
 
