@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.2.3](https://github.com/stackr23/logger/compare/v2.2.2...v2.2.3) (2018-11-19)
+
+
+### Bug Fixes
+
+* **🐛:** export default logger in /index.js ([26a7161](https://github.com/stackr23/logger/commit/26a7161))
+
 ## [2.2.2](https://github.com/stackr23/logger/compare/v2.2.1...v2.2.2) (2018-11-18)
 
 
