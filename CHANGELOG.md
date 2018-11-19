@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.2.4](https://github.com/stackr23/logger/compare/v2.2.3...v2.2.4) (2018-11-19)
+
+
+### Bug Fixes
+
+* **prefix): 🐛 - add scope (style "fix(prefix:** <emoji>") ([c1d626b](https://github.com/stackr23/logger/commit/c1d626b))
+
 ## [2.2.3](https://github.com/stackr23/logger/compare/v2.2.2...v2.2.3) (2018-11-19)
 
 
