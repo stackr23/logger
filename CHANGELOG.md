@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.2.6](https://github.com/stackr23/logger/compare/v2.2.5...v2.2.6) (2018-11-19)
+
+
+### Bug Fixes
+
+* **semantic-release:** :bug: - change order (npm > git) to write version topackage.json ([b87104e](https://github.com/stackr23/logger/commit/b87104e))
+
 ## [2.2.5](https://github.com/stackr23/logger/compare/v2.2.4...v2.2.5) (2018-11-19)
 
 

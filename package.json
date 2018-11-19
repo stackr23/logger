@@ -1,6 +1,6 @@
 {
   "name": "@stackr23/logger",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "beautyful console output helper with custom chalk extension",
   "main": "./dist/index.js",
   "scripts": {
@@ -56,7 +56,8 @@
         "@semantic-release/git",
         {
           "assets": [
-            "CHANGELOG.md", "package.json"
+            "CHANGELOG.md",
+            "package.json"
           ],
           "message": "chore(release): :bookmark: ${nextRelease.version} :package: package :rocket: published\n\n${nextRelease.notes}"
         }
