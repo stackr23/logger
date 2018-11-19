@@ -1,6 +1,6 @@
 {
   "name": "@stackr23/logger",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "description": "beautyful console output helper with custom chalk extension",
   "main": "./dist/index.js",
   "scripts": {
@@ -51,17 +51,16 @@
           "changelogTitle": "# Changelog\n> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)"
         }
       ],
+      "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
           "assets": [
-            "CHANGELOG.md",
-            "package.json"
+            "CHANGELOG.md", "package.json"
           ],
           "message": "chore(release): :bookmark: ${nextRelease.version} :package: package :rocket: published\n\n${nextRelease.notes}"
         }
       ],
-      "@semantic-release/npm",
       "@semantic-release/github"
     ]
   },
