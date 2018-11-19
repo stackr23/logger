@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.2.5](https://github.com/stackr23/logger/compare/v2.2.4...v2.2.5) (2018-11-19)
+
+
+### Bug Fixes
+
+* **prefix:** :heavy_minus_sign: remove some git release assets ([ab42ace](https://github.com/stackr23/logger/commit/ab42ace))
+
 ## [2.2.4](https://github.com/stackr23/logger/compare/v2.2.3...v2.2.4) (2018-11-19)
 
 
