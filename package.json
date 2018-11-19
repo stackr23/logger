@@ -1,6 +1,6 @@
 {
   "name": "@stackr23/logger",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "beautyful console output helper with custom chalk extension",
   "main": "./dist/index.js",
   "scripts": {
