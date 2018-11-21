@@ -1,5 +1,5 @@
 # @stackr23/logger
-> __beautyful console output helper__
+> __beautyful console output helper with [chalk](https://github.com/chalk/chalk) extension__
 
 [![Build Status](https://travis-ci.com/stackr23/logger.svg?branch=master)](https://travis-ci.com/stackr23/logger)
 [![Greenkeeper badge](https://badges.greenkeeper.io/stackr23/logger.svg)](https://greenkeeper.io/)
