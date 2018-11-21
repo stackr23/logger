@@ -76,7 +76,7 @@
     "stackr23"
   ],
   "author": "Stefan Friedl (DoubleU23)",
-  "license": "GNU-LGPL-v3",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stackr23/logger/issues"
   },
