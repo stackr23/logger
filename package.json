@@ -7,7 +7,7 @@
     "test": "node ./test/indexBabelRegister.js",
     "build": "bash ./build.sh",
     "semantic-release": "semantic-release",
-    "conventional-changelog": "conventional-changelog -i CHANGELOG.md -s -a -p angular -r 0"
+    "conventional-changelog": "conventional-changelog -i CHANGELOG.md -s -p angular -r 0"
   },
   "release": {
     "branch": "master",
@@ -30,24 +30,16 @@
         {
           "preset": "angular",
           "parserOpts": {
-            "noteKeywords": [
-              "BREAKING CHANGE",
-              "BREAKING CHANGES",
-              "BREAKING"
-            ]
+            "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
           },
           "writerOpts": {
-            "commitsSort": [
-              "subject",
-              "scope"
-            ]
+            "commitsSort": ["subject", "scope"]
           }
         }
       ],
       [
         "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md",
+        { "changelogFile": "CHANGELOG.md",
           "changelogTitle": "# Changelog\n> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)"
         }
       ],
@@ -56,8 +48,7 @@
         "@semantic-release/git",
         {
           "assets": [
-            "CHANGELOG.md",
-            "package.json"
+            "CHANGELOG.md", "package.json"
           ],
           "message": "chore(release): :bookmark: ${nextRelease.version} :package: package :rocket: published\n\n${nextRelease.notes}"
         }
@@ -69,12 +60,7 @@
     "type": "git",
     "url": "https://github.com/stackr23/logger.git"
   },
-  "keywords": [
-    "logger",
-    "console",
-    "chalk",
-    "stackr23"
-  ],
+  "keywords": ["logger", "console", "chalk", "stackr23"],
   "author": "Stefan Friedl (DoubleU23)",
   "license": "MIT",
   "bugs": {
