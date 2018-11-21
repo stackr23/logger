@@ -28,9 +28,11 @@ script:
 - npm run build
 - npm run test
 
+before_deploy:
+    - npm install -g travis-deploy-once
+
 deploy:
   provider: script
   skip_cleanup: true
   script:
-    - npm install -g travis-deploy-once
     - npx travis-deploy-once "npx semantic-release"
