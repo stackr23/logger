@@ -1,8 +1,9 @@
-'use strict'
+const path            = require('path')
 
-var path            = require('path'),
-    pathNodeModules = path.normalize(
-    path.resolve(__dirname, '..', 'node_modules')
+const pathNodeModules = path.normalize(
+    path.resolve(__dirname, '..', 'node_modules'),
 )
 
-require('@babel/register')({ignore: [pathNodeModules]})
+require('@babel/register')({
+    ignore: [pathNodeModules],
+})

@@ -1,4 +1,3 @@
-'use strict'
+const logger = require('./dist/index.js').default
 
-var logger     = require('./dist/index.js').default
-module.exports.default  = logger
+module.exports.default = logger

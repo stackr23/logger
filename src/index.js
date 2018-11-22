@@ -1,35 +1,27 @@
-import chalk from './chalkExt'
+/* eslint no-console: off */
+import chalkExt from './chalkExt'
 
-export const chalkExt = chalk
-
-export default new class Logger {
-
-    options = {
-        prefix: '{yellow [StackR23]}',
-        debug:  {
-            color:      'cyan'
-        },
-        error:  {
-            color:      'red'
-        },
-        success: {
-            color:      'green'
+class Logger {
+    constructor() {
+        this.options = {
+            prefix: '{yellow [StackR23]}',
+            debug: {
+                color: 'cyan',
+            },
+            error: {
+                color: 'red',
+            },
+            success: {
+                color: 'green',
+            },
         }
     }
-
-    constructor(args) {}
 
     setPrefix(prefix) {
         this.options.prefix = prefix || ''
     }
 
-    logArgs (...output) {
-        console.log(...output)
-    }
-
-    log (str, typePrefix, styleType, styleString) {
-        const prefix = this.options.prefix
-        let type, color
+    log(str, typePrefix, styleType, styleString) {
 
         if (arguments.length === 1) {
             console.log(chalkExt`{bold ${this.options.prefix}} ${str}`)
@@ -38,23 +30,28 @@ export default new class Logger {
         }
 
         if (arguments.length === 2) {
-            type    = typePrefix
-            color   = this.options[type].color
+            const type = typePrefix
+            const {color, prefix, colorType} = this.options[type]
 
-            typePrefix      = this.options[type].prefix || type
-            styleType       = this.options[type].colorType || color
+            typePrefix      = prefix || type
+            styleType       = colorType || color
             styleString     = color
         }
 
-        console.log(chalkExt`{${styleType} {bold ${this.options.prefix} ${typePrefix}:} {${styleString} ${str}}}`)
+        console.log(
+            chalkExt`{${styleType} {bold ${this.options.prefix} ${typePrefix}:} {${styleString} ${str}}}`
+        )
 
         return true
     }
 
-    dir     = (args)    => console.dir(...args)
+    dir     = arg => console.dir(...arg)
 
-    debug   = (str) => this.log(str, 'debug')
-    error   = (str) => this.log(str, 'ERROR',   this.options.error.color    + 'Bright.bgBlack', this.options.error.color)
-    success = (str) => this.log(str, 'SUCCESS', this.options.success.color  + 'Bright',         this.options.success.color)
+    debug   = str => this.log(str, 'debug')
 
+    error   = str => this.log(str, 'ERROR', `${this.options.error.color}Bright.bgBlack`, this.options.error.color)
+
+    success = str => this.log(str, 'SUCCESS', `${this.options.success.color}Bright`, this.options.success.color)
 }
+
+export default new Logger()
