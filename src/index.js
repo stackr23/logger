@@ -4,25 +4,25 @@ import chalkExt from './chalkExt'
 class Logger {
     constructor() {
         this.options = {
-            prefix: '{yellow [StackR23]}',
-            debug: {
-                color: 'cyan',
+            prefix:     '{yellow [StackR23]}',
+            debug:  {
+                color:  'cyan'
             },
             error: {
-                color: 'red',
+                color:  'red'
             },
             success: {
-                color: 'green',
+                color:  'green',
             },
         }
     }
+
 
     setPrefix(prefix) {
         this.options.prefix = prefix || ''
     }
 
     log(str, typePrefix, styleType, styleString) {
-
         if (arguments.length === 1) {
             console.log(chalkExt`{bold ${this.options.prefix}} ${str}`)
 
@@ -30,12 +30,12 @@ class Logger {
         }
 
         if (arguments.length === 2) {
-            const type = typePrefix
+            const type  = typePrefix
             const {color, prefix, colorType} = this.options[type]
 
-            typePrefix      = prefix || type
-            styleType       = colorType || color
-            styleString     = color
+            typePrefix  = prefix || type
+            styleType   = colorType || color
+            styleString = color
         }
 
         console.log(

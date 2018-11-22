@@ -19,6 +19,16 @@
         "ClassProperty": true
       }
     }],
+    "key-spacing": ["error", {
+        "multiLine": {
+            "beforeColon": false,
+            "afterColon": true
+        },
+        "align": {
+            // "mode": "minimum",
+            "on": "value"
+        }
+    }],
     "no-multiple-empty-lines": [2, { "max": 2}],
     "semi": ["error", "never"],
     "one-var": ["error", {

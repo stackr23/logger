@@ -8,6 +8,7 @@ export default function (parts, ...substitutions) {
     parts.forEach((v, i) => {
         rawResults.push(parts.raw[i])
         cookedResults.push(parts[i])
+
         if (i < substitutions.length) {
             rawResults.push(substitutions[i])
             cookedResults.push(substitutions[i])
@@ -17,5 +18,5 @@ export default function (parts, ...substitutions) {
     const chalkParts    = [cookedResults.join('')]
     chalkParts.raw      = [rawResults.join('')]
 
-    return (chalk(chalkParts))
+    return chalk(chalkParts)
 }
