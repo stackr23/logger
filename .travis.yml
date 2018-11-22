@@ -2,7 +2,10 @@ notifications:
   email: false
 
 language: node_js
-node_js: 9
+node_js:
+    - 10
+    - 9
+    - 8
 # cache:
 #   directories:
 #     - ~/.npm
@@ -27,7 +30,4 @@ deploy:
   provider: script
   skip_cleanup: true
   script:
-    # - npx travis-deploy-once "npx semantic-release"
-    - npx npx semantic-release
-
-
+    - npx travis-deploy-once --pro "npx semantic-release"
