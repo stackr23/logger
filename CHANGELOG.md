@@ -1,3 +1,19 @@
+# Changelog
+> generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
+
+# [2.3.0](https://github.com/stackr23/logger/compare/v2.2.6...v2.3.0) (2018-11-22)
+
+
+### Bug Fixes
+
+* **ci:** script: npm run full-test ([6cffb49](https://github.com/stackr23/logger/commit/6cffb49))
+
+
+### Features
+
+* **eslint:** :sparkles: eslint with modified airbnb config ([ebb8e85](https://github.com/stackr23/logger/commit/ebb8e85))
+* **lint:** use eslint + eslint-config-standard ([2644617](https://github.com/stackr23/logger/commit/2644617))
+
 ## [2.2.6](https://github.com/stackr23/logger/compare/v2.2.5...v2.2.6) (2018-11-19)
 
 
@@ -148,6 +164,3 @@
 
 
 # 1.0.0 (2018-11-16)
-
-
-
