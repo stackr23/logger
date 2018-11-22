@@ -1,6 +1,13 @@
 # Changelog
 > generated with [@semantic-release/changelog](https://github.com/semantic-release/changelog)
 
+## [2.3.1](https://github.com/stackr23/logger/compare/v2.3.0...v2.3.1) (2018-11-22)
+
+
+### Bug Fixes
+
+* **travis:** :bug: use --pro flag for travis-deploy-once ([52f8b7d](https://github.com/stackr23/logger/commit/52f8b7d)), closes [semantic-release/travis-deploy-once#52](https://github.com/semantic-release/travis-deploy-once/issues/52)
+
 # [2.3.0](https://github.com/stackr23/logger/compare/v2.2.6...v2.3.0) (2018-11-22)
 
 
