@@ -5,10 +5,9 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "node ./test/indexBabelRegister.js",
-    "test-full": "npm run build && npm run lint && npm run test",
+    "full-test": "npm run build && npm run lint && npm run test",
     "build": "bash ./build.sh",
     "semantic-release": "semantic-release",
-    "conventional-changelog": "conventional-changelog -i CHANGELOG.md -s -p angular -r 0",
     "lint": "npx eslint . --ignore-pattern=dist/**/*"
   },
   "release": {

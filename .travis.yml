@@ -17,7 +17,7 @@ branches:
 install: npm install
 
 script:
-- npm run test
+- npm run full-test
 
 before_deploy:
   - npm i -g semantic-release
