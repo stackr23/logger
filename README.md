@@ -31,10 +31,10 @@ for custom strings you can use chalks [tagged template literal](https://github.c
 
 ## TBD
 
-* npm publish
+* init options
 * log levels
-* options
 * input validation
+* CLI usage for BASH
 * ...
 
 <!-- badge urls -->
