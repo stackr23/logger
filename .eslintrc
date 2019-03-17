@@ -25,7 +25,7 @@
             "afterColon": true
         },
         "align": {
-            // "mode": "minimum",
+            "mode": "minimum",
             "on": "value"
         }
     }],
