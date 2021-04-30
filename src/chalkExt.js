@@ -1,7 +1,7 @@
 import chalk from 'chalk'
 
 // no arrow function -> preserve context!
-export default function (parts, ...substitutions) {
+export default function(parts, ...substitutions) {
     const rawResults      = []
     const cookedResults   = []
 
@@ -15,8 +15,8 @@ export default function (parts, ...substitutions) {
         }
     })
 
-    const chalkParts    = [cookedResults.join('')]
-    chalkParts.raw      = [rawResults.join('')]
+    const chalkParts    = [ cookedResults.join('') ]
+    chalkParts.raw      = [ rawResults.join('') ]
 
     return chalk(chalkParts)
 }
