@@ -5,5 +5,5 @@ const pathNodeModules = path.normalize(
 )
 
 require('@babel/register')({
-    ignore: [pathNodeModules],
+    ignore: [ pathNodeModules ],
 })

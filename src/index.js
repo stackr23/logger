@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint no-console: off */
 import chalkExt from './chalkExt'
 
@@ -6,13 +7,13 @@ class Logger {
         this.options = {
             prefix:     '{yellow [StackR23]}',
             debug:  {
-                color:  'cyan'
+                color: 'cyan'
             },
             error: {
-                color:  'red'
+                color: 'red'
             },
             success: {
-                color:  'green',
+                color: 'green',
             },
         }
     }
