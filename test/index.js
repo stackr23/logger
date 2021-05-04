@@ -1,7 +1,11 @@
 import chalk from 'chalk'
 
-import Logger from '../src/index'
+// import Logger from '../src/index'
+import {Logger} from '../src/index'
 import chalkExt from '../src/chalkExt'
+
+
+const log = new Logger({prefix: ''})
 
 console.log(
     chalk`There are {red.bold 5280 feet} in a mile.`
@@ -25,10 +29,10 @@ console.log(
 // let color = 'red'
 
 
-Logger.error('unexpected bahavior')
+log.error('unexpected bahavior')
 
 
-Logger.success('logger running!')
+log.success('logger running!')
 // Logger.log('{reset.magenta custom {bgBlackBright.yellow output style}}')
 // Logger.debug('standard debug info')
 

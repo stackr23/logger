@@ -48,4 +48,5 @@ class Logger {
     success = str => this.log(str, 'success') //, `${this.options.successColor}Bright`, this.options.successColor)
 }
 
+export {Logger}
 export default new Logger()
