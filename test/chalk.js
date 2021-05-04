@@ -1,11 +1,11 @@
 // import chalk from 'chalk'
 const chalk = require('chalk')
 
-const Logger = require('../src/index').default
-const chalkExt = require('../src/chalkExt').default
+// const Logger = require('../src/index').default
+const chalkExt = require('../dist/chalkExt').default
 
 
-Logger.error('ERROR TEST')
+// Logger.error('ERROR TEST')
 
 // console.log(
 //     chalk.red('test'),
