@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint no-console: off */
 import _ from 'lodash'
+import chalk from 'chalk'
 
 import chalkExt from './chalkExt'
 
@@ -8,27 +9,31 @@ class Logger {
 
     // use static props -> update babel!
     defaults = {
-        prefix:  '[StackR23]',
-        debug:   {style: 'cyan', prefix: 'DEBUG'},
-        error:   {style: 'red', prefix: 'ERROR'},
-        success: {style: 'green', prefix: 'SUCCESS'}
+        prefix:      '[StackR23]',
+        style:       'yellowBright.bold',
+        debug:       {style: 'cyan', prefix: 'DEBUG'},
+        error:       {style: 'red', prefix: 'ERROR'},
+        success:     {style: 'green', prefix: 'SUCCESS'}
     }
 
     constructor(options) {
         this.options = _.merge(this.defaults, options)
     }
 
-    log(str, type, styleStringCustom) {
+    log(str, type, styleCustom) {
         // if (arguments.length === 1) {
         //     console.log(chalkExt`{${this.options.prefixColor}.bold ${this.options.prefix}} ${str}`)
 
         //     return true
         // }
 
-        const {styleString, prefix} = this.options[type]
+        const {style, prefix} = this.options
+        const typeOptions = this.options[type]
 
         console.log(
-            chalkExt`{bold ${prefix}:} {${styleString} ${str}}`
+            chalk`{${style} ${prefix}} {bold.${typeOptions.style} ${typeOptions.prefix}:}`,
+            chalk`{${styleCustom || typeOptions.style} ${str}}`
+            // chalkExt`{bold ${prefix}:} {${styleString} ${str}}`
         )
 
         return true
