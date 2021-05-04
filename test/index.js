@@ -1,8 +1,22 @@
 /* eslint-disable-next-line import/no-unresolved */
-import Logger from '../src'
+import chalk from 'chalk'
 
-Logger.success('logger running!')
-Logger.error('unexpected bahavior')
+import Logger from '../src'
+import chalkExt from '../src/chalkExt'
+
+
+let color = 'red'
+
+console.log(
+    chalk`{red test}`,
+    chalkExt`test`,
+    // chalkExt`{red test}`,
+)
+
+// Logger.error('unexpected bahavior')
+
+
+// Logger.success('logger running!')
 // Logger.log('{reset.magenta custom {bgBlackBright.yellow output style}}')
-Logger.debug('standard debug info')
+// Logger.debug('standard debug info')
 

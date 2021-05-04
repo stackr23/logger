@@ -9,38 +9,30 @@ class Logger {
     // use static props -> update babel!
     defaults = {
         prefix:  '[StackR23]',
-        debug:   {color: 'cyan', prefix: 'DEBUG'},
-        error:   {color: 'red', prefix: 'ERROR'},
-        success: {color: 'green', prefix: 'SUCCESS'}
+        debug:   {style: 'cyan', prefix: 'DEBUG'},
+        error:   {style: 'red', prefix: 'ERROR'},
+        success: {style: 'green', prefix: 'SUCCESS'}
     }
 
     constructor(options) {
         console.log('options :>> ', options)
 
         this.options = _.merge(this.defaults, options)
-        console.log('this.defaults :>> ', this.defaults)
-        console.log('this.options :>> ', this.options)
     }
 
-    log(str, typePrefix, styleType, styleString) {
-        if (arguments.length === 1) {
-            console.log(chalkExt`{${this.options.prefixColor}.bold ${this.options.prefix}} ${str}`)
+    log(str, type, styleStringCustom) {
+        // if (arguments.length === 1) {
+        //     console.log(chalkExt`{${this.options.prefixColor}.bold ${this.options.prefix}} ${str}`)
 
-            return true
-        }
+        //     return true
+        // }
 
-        if (arguments.length === 2) {
-            const type  = typePrefix
-            const {color, prefix} = this.options[type] //
+        console.log(this.options[type])
+        const {styleString, prefix} = this.options[type]
 
-            typePrefix  = prefix || type
-            // styleType   = colorType || color
-            styleString = color
-        }
 
         console.log(
-            // ${styleType}
-            chalkExt`{{bold ${this.options.prefix} ${typePrefix}:} {${styleString} ${str}}`
+            chalkExt`{bold ${prefix}:} {${styleString} ${str}}`
         )
 
         return true
