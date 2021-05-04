@@ -30,6 +30,9 @@ class Logger {
         const {style, prefix} = this.options
         const typeOptions = this.options[type]
 
+        // concat chalk string to prevent extra spaces
+        // if (prefix) {}
+
         console.log(
             chalk`{${style} ${prefix}} {bold.${typeOptions.style} ${typeOptions.prefix}:}`,
             chalk`{${styleCustom || typeOptions.style} ${str}}`
