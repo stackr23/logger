@@ -15,8 +15,6 @@ class Logger {
     }
 
     constructor(options) {
-        console.log('options :>> ', options)
-
         this.options = _.merge(this.defaults, options)
     }
 
@@ -27,9 +25,7 @@ class Logger {
         //     return true
         // }
 
-        console.log(this.options[type])
         const {styleString, prefix} = this.options[type]
-
 
         console.log(
             chalkExt`{bold ${prefix}:} {${styleString} ${str}}`

@@ -8,9 +8,7 @@ import chalkExt from '../src/chalkExt'
 let color = 'red'
 
 console.log(
-    chalk`{red test}`,
-    chalkExt`test`,
-    // chalkExt`{red test}`,
+    chalk`{red TEST}`
 )
 
 // Logger.error('unexpected bahavior')

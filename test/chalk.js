@@ -1,18 +1,22 @@
 // import chalk from 'chalk'
 const chalk = require('chalk')
-const chalkExt = require('../dist/chalkExt').default;
+
+const Logger = require('../src/index').default
+const chalkExt = require('../src/chalkExt').default
+
+
+Logger.error('ERROR TEST')
 
 // console.log(
 //     chalk.red('test'),
 //     chalk`is this blue? {blue TEST}`
 // )
 
-console.log(
-    // chalk('is this {blue blue?}')
-    // chalk`{red TEST}`
-);
-
 let color = 'red'
+console.log(
+    chalk`{red TEST}`
+)
+
 
 console.log(
     chalkExt`{${color}Bright.bgBlack TEST}`
