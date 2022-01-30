@@ -1,58 +1,59 @@
 /* eslint-disable no-param-reassign */
 /* eslint no-console: off */
 import _ from 'lodash'
+<<<<<<< HEAD
+import chalk from 'chalk'
+// import chalkExt from './chalkExt'
+=======
 
 import chalkExt from './chalkExt'
+>>>>>>> 1871a68 (* feat: pass options to Logger instance)
 
+// TODO: use static props -> update babel!
 class Logger {
 
-    // use static props -> update babel!
     defaults = {
-        prefix:  '[StackR23]',
-        debug:   {color: 'cyan', prefix: 'DEBUG'},
-        error:   {color: 'red', prefix: 'ERROR'},
-        success: {color: 'green', prefix: 'SUCCESS'}
+        prefix:  '{bold.yellow [StackR23] }',
+        log:     {style: 'reset', prefix: 'bold.yellow LOG - '},
+        debug:   {style: 'cyan', prefix: '{bold.cyan DEBUG: }'},
+        error:   {style: 'red', prefix: '{bold.red ERROR: }'},
+        success: {style: 'green', prefix: '{bold.green SUCCESS: }'}
     }
 
     constructor(options) {
-        console.log('options :>> ', options)
-
         this.options = _.merge(this.defaults, options)
         console.log('this.defaults :>> ', this.defaults)
         console.log('this.options :>> ', this.options)
     }
 
-    log(str, typePrefix, styleType, styleString) {
-        if (arguments.length === 1) {
-            console.log(chalkExt`{${this.options.prefixColor}.bold ${this.options.prefix}} ${str}`)
+    log(str, type = 'log', styleCustom) {
+        const {prefix, [type]: typeOptions} = this.options
 
+<<<<<<< HEAD
             return true
         }
 
-        if (arguments.length === 2) {
-            const type  = typePrefix
-            const {color, prefix} = this.options[type] //
+        const {style, prefix} = this.options
+        const typeOptions = this.options[type]
 
-            typePrefix  = prefix || type
-            // styleType   = colorType || color
-            styleString = color
+=======
+        if (arguments.length === 1) {
+            console.log(chalkExt`${prefix}${str}`)
+            return
         }
 
+>>>>>>> 1871a68 (* feat: pass options to Logger instance)
         console.log(
-            // ${styleType}
-            chalkExt`{{bold ${this.options.prefix} ${typePrefix}:} {${styleString} ${str}}`
+            (prefix ? chalkExt`${prefix}` : '') +
+            (typeOptions.prefix ? chalkExt`${typeOptions.prefix}` : '') +
+            chalkExt`{${typeOptions.style} ${str}}`
         )
-
-        return true
     }
 
-    dir     = arg => console.dir(...arg)
-
     debug   = str => this.log(str, 'debug')
-
-    error   = str => this.log(str, 'error') //, `${this.options.errorColor}Bright.bgBlack`, this.options.errorColor)
-
-    success = str => this.log(str, 'success') //, `${this.options.successColor}Bright`, this.options.successColor)
+    error   = str => this.log(str, 'error')
+    success = str => this.log(str, 'success')
 }
 
+export {Logger}
 export default new Logger()
