@@ -1,58 +1,45 @@
 /* eslint-disable no-param-reassign */
 /* eslint no-console: off */
+import _ from 'lodash'
+
 import chalkExt from './chalkExt'
 
+// TODO: use static props -> update babel!
 class Logger {
-    constructor() {
-        this.options = {
-            prefix:     '{yellow [StackR23]}',
-            debug:  {
-                color: 'cyan'
-            },
-            error: {
-                color: 'red'
-            },
-            success: {
-                color: 'green',
-            },
-        }
+
+    defaults = {
+        prefix:  '{bold.yellow [StackR23] }',
+        log:     {style: 'reset', prefix: 'bold.yellow LOG - '},
+        debug:   {style: 'cyan', prefix: '{bold.cyan DEBUG: }'},
+        error:   {style: 'red', prefix: '{bold.red ERROR: }'},
+        success: {style: 'green', prefix: '{bold.green SUCCESS: }'}
     }
 
-
-    setPrefix(prefix) {
-        this.options.prefix = prefix || ''
+    constructor(options) {
+        this.options = _.merge(this.defaults, options)
+        console.log('this.defaults :>> ', this.defaults)
+        console.log('this.options :>> ', this.options)
     }
 
-    log(str, typePrefix, styleType, styleString) {
+    log(str, type = 'log', styleCustom) {
+        const {prefix, [type]: typeOptions} = this.options
+
         if (arguments.length === 1) {
-            console.log(chalkExt`{bold ${this.options.prefix}} ${str}`)
-
-            return true
-        }
-
-        if (arguments.length === 2) {
-            const type  = typePrefix
-            const {color, prefix, colorType} = this.options[type]
-
-            typePrefix  = prefix || type
-            styleType   = colorType || color
-            styleString = color
+            console.log(chalkExt`${prefix}${str}`)
+            return
         }
 
         console.log(
-            chalkExt`{${styleType} {bold ${this.options.prefix} ${typePrefix}:} {${styleString} ${str}}}`
+            (prefix ? chalkExt`${prefix}` : '') +
+            (typeOptions.prefix ? chalkExt`${typeOptions.prefix}` : '') +
+            chalkExt`{${typeOptions.style} ${str}}`
         )
-
-        return true
     }
 
-    dir     = arg => console.dir(...arg)
-
     debug   = str => this.log(str, 'debug')
-
-    error   = str => this.log(str, 'ERROR', `${this.options.error.color}Bright.bgBlack`, this.options.error.color)
-
-    success = str => this.log(str, 'SUCCESS', `${this.options.success.color}Bright`, this.options.success.color)
+    error   = str => this.log(str, 'error')
+    success = str => this.log(str, 'success')
 }
 
+export {Logger}
 export default new Logger()
