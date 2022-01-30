@@ -1,13 +1,8 @@
 /* eslint-disable no-param-reassign */
 /* eslint no-console: off */
 import _ from 'lodash'
-<<<<<<< HEAD
-import chalk from 'chalk'
-// import chalkExt from './chalkExt'
-=======
 
 import chalkExt from './chalkExt'
->>>>>>> 1871a68 (* feat: pass options to Logger instance)
 
 // TODO: use static props -> update babel!
 class Logger {
@@ -29,20 +24,11 @@ class Logger {
     log(str, type = 'log', styleCustom) {
         const {prefix, [type]: typeOptions} = this.options
 
-<<<<<<< HEAD
-            return true
-        }
-
-        const {style, prefix} = this.options
-        const typeOptions = this.options[type]
-
-=======
         if (arguments.length === 1) {
             console.log(chalkExt`${prefix}${str}`)
             return
         }
 
->>>>>>> 1871a68 (* feat: pass options to Logger instance)
         console.log(
             (prefix ? chalkExt`${prefix}` : '') +
             (typeOptions.prefix ? chalkExt`${typeOptions.prefix}` : '') +
